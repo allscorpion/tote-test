@@ -1,3 +1,8 @@
+# Items in shop
+
+If you wish to alter the items in the shop then you can change them in the products.json file here src\features\products\__mocks__
+e.g. to test the pie discount expiry date you can change the "expiryDate" property
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
