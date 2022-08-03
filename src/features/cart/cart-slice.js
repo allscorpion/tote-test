@@ -21,8 +21,6 @@ export const cartSlice = createSlice({
                 return acc + convertCurrencyToNumber(item.cost);
             }, 0));
 
-            console.log(action.payload);
-            console.log(getDiscountedPrice(JSON.parse(JSON.stringify(state.items))));
             state.totalPrice = getDiscountedPrice(JSON.parse(JSON.stringify(state.items)));
             state.totalDiscount = formatToCurrency(state.originalPrice - state.totalPrice);
         }

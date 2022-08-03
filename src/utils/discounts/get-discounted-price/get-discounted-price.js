@@ -27,8 +27,6 @@ export const getDiscountedPrice = (items) => {
     const pies = items.filter(x => x.product === 'Pie');
     const chips = items.filter(x => x.product === 'Chips');
 
-    console.log(pies, chips);
-
     for (let i = 0; i < chips.length; i++) {
         checkMealDeal(chips, pies, i, i);
     }
